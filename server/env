@@ -1,2 +1,2 @@
 MONGO_URL=mongodb+srv://restart0456:vrSijEXzqcH6Bt7B@cluster0.bk2j5np.mongodb.net/dashboard
-PORT=5001;
+PORT=5001
