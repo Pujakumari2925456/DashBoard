@@ -1,3 +1,4 @@
+
 import Product from "../models/Product.js";
 import ProductStat from "../models/ProductStat.js";
 import User from "../models/User.js";
@@ -33,3 +34,4 @@ export const getCustomers = async (req, res) => {
     res.status(404).json({ message: error.message });
   }
 };
+

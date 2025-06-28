@@ -1,3 +1,4 @@
+
 import express from "express";
 import { getProducts, getCustomers } from "../controllers/client.js";
 
