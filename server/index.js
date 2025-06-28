@@ -46,10 +46,7 @@ app.use("/sales", salesRoutes);
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 9000;
 mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGO_URL)
   .then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
@@ -59,6 +56,10 @@ mongoose
     // Product.insertMany(dataProduct);
     // ProductStat.insertMany(dataProductStat);
     // Transaction.insertMany(dataTransaction);
+<<<<<<< HEAD
     User.insertMany(dataUser);
+=======
+    // User.insertMany(dataUser);
+>>>>>>> f6b905b (add Products Page)
   })
   .catch((error) => console.log(`${error} did not connect`));

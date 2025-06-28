@@ -7,7 +7,13 @@ import Sidebar from "components/Sidebar";
 const Layout = () => {
   const isNonMobile = useMediaQuery("(min-width: 600px)");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+<<<<<<< HEAD
 
+=======
+  const userId = useSelector((state) => state.global.userId);
+  const { data } = useGetUserQuery(userId);
+  // console.log("data", data);
+>>>>>>> f6b905b (add Products Page)
   // Dummy user data (can later be fetched from API or global state)
   const user = {
     name: "Demo User",
@@ -36,4 +42,3 @@ const Layout = () => {
 };
 
 export default Layout;
-
