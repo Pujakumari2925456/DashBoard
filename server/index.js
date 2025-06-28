@@ -56,10 +56,7 @@ mongoose
     // Product.insertMany(dataProduct);
     // ProductStat.insertMany(dataProductStat);
     // Transaction.insertMany(dataTransaction);
-<<<<<<< HEAD
-    User.insertMany(dataUser);
-=======
+
     // User.insertMany(dataUser);
->>>>>>> f6b905b (add Products Page)
   })
   .catch((error) => console.log(`${error} did not connect`));
