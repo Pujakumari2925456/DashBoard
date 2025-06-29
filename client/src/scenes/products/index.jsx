@@ -91,19 +91,13 @@ const Products = () => {
 
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="PRODUCTS" subtitle="See your product's list." />
-      {isLoading ? (
-        <Typography>Loading...</Typography>
-      ) : error ? (
-        <Typography color="error">
-          Error loading products: {error.message || "Unknown error"}
-        </Typography>
-      ) : data && Array.isArray(data) && data.length > 0 ? (
+      <Header title="PRODUCTS" subtitle="See your list of products." />
+      {data || !isLoading ? (
         <Box
           mt="20px"
           display="grid"
-          gridTemplateColumns="repeat(4,minmax(0,1fr))"
-          justifyContent={"space-between"}
+          gridTemplateColumns="repeat(4, minmax(0, 1fr))"
+          justifyContent="space-between"
           rowGap="20px"
           columnGap="1.33%"
           sx={{
@@ -136,7 +130,7 @@ const Products = () => {
           )}
         </Box>
       ) : (
-        <Typography>No products found</Typography>
+        <>Loading...</>
       )}
     </Box>
   );
